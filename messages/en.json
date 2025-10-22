@@ -1,0 +1,12 @@
+{
+  "Navigation" : {
+    "AboutUs" : "About Us",
+    "Projects" : "Projects",
+    "News" : "News",
+    "Merch": "Merch",
+    "Login": "Login/Create Account"
+  },
+  "HomePage-AboutUs" : {
+    
+  }
+}

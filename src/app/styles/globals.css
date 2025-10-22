@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-main: var(--font-PlusJakartaSan);
+  /* --font-secondary: var(--font-anton); */
+}
+
+
+body {
+  color: var(--font-color);
+  background: var(--background);
+  font-family: var(--font-main);
+  /* font-family: var(--font-anton); */
+}
