@@ -1,9 +1,21 @@
 {
   "Navigation" : {
-    "AboutUs" : "About Us",
-    "Projects" : "Projects",
-    "News" : "News",
-    "Merch": "Merch",
+    "AboutUs" : {
+      "Heading" : "About Us",
+      "Label" : "Learn about us"
+    },
+    "Projects" : {
+      "Heading" : "Project",
+      "Label" : "Stay Update Our Project"
+    },
+    "News" :  {
+      "Heading" : "News",
+      "Label" : "Stay Close to Our"
+    },
+    "Merch":  {
+      "Heading" : "Merch",
+      "Label" : "Lets to be part of Us"
+    },
     "Login": "Login/Create Account"
   },
   "HomePage-AboutUs" : {

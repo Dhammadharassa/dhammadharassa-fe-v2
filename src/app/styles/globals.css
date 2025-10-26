@@ -5,6 +5,9 @@
   /* --font-secondary: var(--font-anton); */
 }
 
+:root{
+  --background: #fbf8ef;
+}
 
 body {
   color: var(--font-color);

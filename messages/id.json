@@ -1,9 +1,21 @@
 {
   "Navigation" : {
-    "AboutUs" : "Tentang Kami",
-    "Projects" : "Projek",
-    "News" : "Artikel",
-    "Merch": "Merch",
+    "AboutUs" : {
+      "Heading" : "Tentang",
+      "Label" : "Pelajari Kami"
+    },
+    "Projects" :{
+      "Heading" : "Projek",
+      "Label" : "Lihat Projek Kami"
+    },
+    "News" :{
+      "Heading" : "Artikel",
+      "Label" : "Jadilah Orang Pertama yang Update Aktivitas Kami"
+    },
+    "Merch":  {
+      "Heading" : "Merch",
+      "Label" : "Beli Merch Kami"
+    },
     "Login": "Masuk/Buat Akun"
   }
 }
