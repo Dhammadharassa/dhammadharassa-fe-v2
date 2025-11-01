@@ -6,17 +6,20 @@ const nextConfig: NextConfig = {
       ignoreBuildErrors: true,
     },
       reactStrictMode: false,
-    webpack: (config, { dev }) => {
+    webpack: (config, { dev, isServer }) => {
+      if (isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        self: false,
+      };
+    }
       if (dev) {
-        // 禁用 webpack 的热模块替换
         config.watchOptions = {
-          ignored: ['**/*'], // 忽略所有文件变化
+          ignored: ['**/*'], 
         };
       }
-      
-      // Performance optimizations
+    
       if (!dev) {
-        // Enable production optimizations
         config.optimization.splitChunks = {
           chunks: 'all',
           cacheGroups: {
