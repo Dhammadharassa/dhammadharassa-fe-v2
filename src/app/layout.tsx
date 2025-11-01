@@ -1,5 +1,11 @@
-import './styles/globals.css';
+//import type { Metadata } from "next";
 import { Plus_Jakarta_Sans} from "next/font/google";
+import './styles/globals.css';
+// import { Toaster } from "@/components/ui/toaster";
+// import { Analytics } from "@vercel/analytics/next";
+// import { SpeedInsights } from "@vercel/speed-insights/next";
+//import { getBaseUrl } from "@/config/seo";
+import { getBaseUrl } from "./config/seo";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
@@ -7,8 +13,8 @@ const PlusJakartaSans = Plus_Jakarta_Sans({
   weight: ['400', '500', '600', '700'],
 });
 
-
 export const metadata = {
+  metadataBase: new URL(getBaseUrl()),
   title: 'Dhammadharassa - Life Your Young Life',
   description: 'Padumuttara Youth Community @dhammadharassa',
   keywords: 'Buddha, Buddhis, Buddhis Organization, Padumuttara Youth Community, Dhammadharassa, dhammadharassa, padum',
@@ -36,15 +42,18 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-  params
 }: {
   children: React.ReactNode;
-  params: { locale: string }
 }) {
   return (
-    <html lang={params.locale}>
-      <body className={`${PlusJakartaSans.variable} font-sans`}>
+    <html suppressHydrationWarning>
+      <body
+        className={`${PlusJakartaSans.variable}`}
+      >
         {children}
+        {/* <Toaster />
+        <Analytics />
+        <SpeedInsights /> */}
       </body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 "use client"
 
+import Image from 'next/image';
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 
@@ -384,9 +385,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
           className="staggered-menu-header absolute top-0 left-0 w-full flex items-center justify-between p-[2em] bg-transparent pointer-events-none z-20"
           aria-label="Main navigation header"
         >
-          <div className="sm-logo flex items-center select-none pointer-events-auto" aria-label="Logo">
-            <img
-              src={logoUrl || '/src/assets/logos/reactbits-gh-white.svg'}
+          <div className="sm-logo flex items-center select-none pointer-events-auto " aria-label="Logo">
+            <Image
+              src={logoUrl}
               alt="Logo"
               className="sm-logo-img block h-8 w-auto object-contain"
               draggable={false}
@@ -397,7 +398,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
           <button
             ref={toggleBtnRef}
-            className={`sm-toggle relative inline-flex items-center gap-2 bg-transparent cursor-pointer font-medium leading-none overflow-visible pointer-events-auto !border !border-gray-900 rounded-full px-5 py-2 ${
+            className={`sm-toggle relative inline-flex items-center gap-2 bg-[#181411]! text-[#f3f0e9]!  cursor-pointer font-medium leading-none overflow-visible pointer-events-auto  rounded-full px-5 py-2 ${
               open ? 'text-black' : 'text-[#e9e9ef]'
             }`}
             aria-label={open ? 'Close menu' : 'Open menu'}
