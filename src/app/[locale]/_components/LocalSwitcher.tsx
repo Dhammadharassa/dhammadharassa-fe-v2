@@ -8,8 +8,8 @@ export default function LocaleSwitcher() {
 
   
   const flagImages = {
-    id: "/assets/img-indonesia-flag.png", 
-    en: "/assets/img-us-flag.png"  
+    id: "/assets/images/img-indonesia-flag.png", 
+    en: "/assets/images/img-us-flag.png"  
   };
 
   return (

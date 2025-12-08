@@ -1,5 +1,9 @@
 {
   "Navigation" : {
+     "Navbar" : {
+      "Socials": "Socials",
+      "Language-Select": "Language"
+    },
     "AboutUs" : {
       "Heading" : "About",
       "Label" : "Learn about us"

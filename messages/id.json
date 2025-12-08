@@ -1,5 +1,9 @@
 {
   "Navigation" : {
+    "Navbar" : {
+      "Socials": "Sosial Media",
+      "Language-Select": "Pilih Bahasa"
+    },
     "AboutUs" : {
       "Heading" : "Tentang",
       "Label" : "Pelajari Kami"
