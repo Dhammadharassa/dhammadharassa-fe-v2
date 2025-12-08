@@ -31,7 +31,7 @@ export const metadata = {
     siteName: 'Dhammadharassa',
     images: [
       {
-        url: '/assets/Logo-2.png',
+        url: '/assets/images/ddLogo.png',
         width: 1200,
         height: 630,
         alt: 'Dhammadharassa',
