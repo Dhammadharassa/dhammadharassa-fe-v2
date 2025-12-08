@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-"use client"
+"use client";
 
 import Image from 'next/image';
 import React, { useCallback, useLayoutEffect, useRef, useState } from 'react';
@@ -441,7 +441,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
         <aside
           id="staggered-menu-panel"
           ref={panelRef}
-          className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px]"
+          className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-md"
           style={{ WebkitBackdropFilter: 'blur(12px)' }}
           aria-hidden={!open}
         >
@@ -460,7 +460,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                       aria-label={it.ariaLabel}
                       data-index={idx + 1}
                     >
-                      <span className="sm-panel-itemLabel inline-block [transform-origin:50%_100%] will-change-transform">
+                      <span className="sm-panel-itemLabel inline-block  origin-[50%-100%] will-change-transform">
                         {it.label}
                       </span>
                     </a>

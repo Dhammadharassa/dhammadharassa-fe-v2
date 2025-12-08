@@ -6,7 +6,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "../_components//ui/select";
+} from "../_components/ui/select";
 import { Locale, routing, usePathname, useRouter } from "@/i18n/routing";
 import { useParams } from "next/navigation";
 import { ReactNode } from "react";
@@ -36,7 +36,7 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
   return (
     <Select defaultValue={defaultValue} onValueChange={onSelectChange}>
       <SelectTrigger
-        className='w-[80px] h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0'
+        className='w-20 h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0'
         aria-label={label}
       >
         <SelectValue />

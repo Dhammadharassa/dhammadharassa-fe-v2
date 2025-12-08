@@ -18,24 +18,6 @@ const nextConfig: NextConfig = {
 
     if (dev) {
       config.watchOptions = { ignored: ['**/*'] };
-    } else {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
-            priority: 10,
-          },
-          common: {
-            name: 'common',
-            minChunks: 2,
-            chunks: 'all',
-            priority: 5,
-          },
-        },
-      };
     }
 
     return config;

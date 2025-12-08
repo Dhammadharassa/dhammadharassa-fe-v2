@@ -2,10 +2,6 @@
 import { useTranslations} from 'next-intl';
 import StaggeredMenu from './ui/StaggeredMenu';
 
-
-
-
-
 export default function Navbar() {
 
   const t = useTranslations("Navigation");
@@ -17,9 +13,8 @@ export default function Navbar() {
 ];
 
 const socialItems = [
-  { label: 'Twitter', link: 'https://twitter.com' },
-  { label: 'GitHub', link: 'https://github.com' },
-  { label: 'LinkedIn', link: 'https://linkedin.com' }
+  { label: 'Instagram', link: 'https://twitter.com' },
+  { label: 'Tiktok', link: 'https://github.com' },
 ];
 
 return (
@@ -36,8 +31,8 @@ return (
         colors={['#24a863', '#ff7424']}
         logoUrl="/ddLogo.png"
         accentColor="#ff7424"
-        onMenuOpen={() => console.log('Menu opened')}
-        onMenuClose={() => console.log('Menu closed')}
+        // onMenuOpen={() => console.log('Menu opened')}
+        // onMenuClose={() => console.log('Menu closed')}
         isFixed={true}
       />
     </div>
