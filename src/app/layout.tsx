@@ -20,7 +20,7 @@ export const metadata = {
   keywords: 'Buddha, Buddhis, Buddhis Organization, Padumuttara Youth Community, Dhammadharassa, dhammadharassa, padum',
   authors: [{ name: 'Dhammadharassa Team' }],
   icons: {
-    icon: '/assets/images/ddLogo.png', 
+    icon: '/assets/images/DhammadharassaLogo.png', 
   },
   creator: 'Dhammadharassa Team',
   publisher: 'Dhammadharassa Team',
@@ -31,7 +31,7 @@ export const metadata = {
     siteName: 'Dhammadharassa',
     images: [
       {
-        url: '/assets/images/ddLogo.png',
+        url: '/assets/images/DhammadharassaLogo.png',
         width: 1200,
         height: 630,
         alt: 'Dhammadharassa',
