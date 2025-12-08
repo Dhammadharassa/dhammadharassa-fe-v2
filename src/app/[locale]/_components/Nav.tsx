@@ -29,7 +29,7 @@ return (
         openMenuButtonColor="#181411"
         changeMenuColorOnOpen={true}
         colors={['#24a863', '#ff7424']}
-        logoUrl="/assets/images/DDLogo.png"
+        logoUrl="/assets/images/DhammadharassaLogo.png"
         accentColor="#ff7424"
         // onMenuOpen={() => console.log('Menu opened')}
         // onMenuClose={() => console.log('Menu closed')}
