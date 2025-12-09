@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import { locales, defaultLocale } from '@/routing';
 import { getBaseUrl } from '../config/seo';
 import Navbar from './_components/Nav';
+import HomePage from './page';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -25,8 +26,10 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages} locale={locale}>
+      <div className="overflow-x-hidden">
       <Navbar/>
       {children}
+      </div>
     </NextIntlClientProvider>
   );
 }

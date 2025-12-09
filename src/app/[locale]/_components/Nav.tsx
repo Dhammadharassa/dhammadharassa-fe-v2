@@ -18,7 +18,7 @@ const socialItems = [
 ];
 
 return (
-    <div style={{ height: '100vh' }}>
+    <div className='z-50'>
       <StaggeredMenu
         position="right"
         items={menuItems}
